@@ -1,0 +1,5 @@
+fqdn: exsample.com
+ssh_user: foo
+ssh_key: "ssh-rsa AAAA...."
+wordpress:
+  db_name: db
