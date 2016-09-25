@@ -11,22 +11,24 @@ bundle install --path vendor/bundler
 
 cheat http://qiita.com/fukuiretu/items/170aa956731f2ffb5715
 
-dry-run
-
-```
-bundle exec itamae ssh -u <user> -h <host> --dryn-run roles/web.rb
-```
-
 exec
 
 ```
-bundle exec itamae ssh -u <user> -h <host> roles/web.rb
+bundle exec itamae ssh -u <user> -h <host> -y nodes/config.yaml roles/web.rb
+```
+
+### option
+
+dry-run
+
+```
+--dry-run
 ```
 
 debug
 
 ```
-bundle exec itamae ssh -u <user> -h <host> --log-level=debug roles/web.rb
+--log-level=debug
 ```
 
 ### tips
